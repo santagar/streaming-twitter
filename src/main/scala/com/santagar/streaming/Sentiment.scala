@@ -6,7 +6,7 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.{SparkConf, SparkContext}
 import twitter4j.Status
 
-object Twitter extends App {
+object Sentiment extends App {
 
   // You can find all functions used to process the stream in the
   // Utils.scala source file, whose contents we import here
@@ -18,7 +18,7 @@ object Twitter extends App {
   // will set it to be a local deployment running an
   // executor per thread
   val sparkConfiguration = new SparkConf().
-    setAppName("streaming-twitter").
+    setAppName("streaming-twitter-sentiment").
     setMaster(sys.env.get("spark.master").getOrElse("local[*]"))
 
   // Let's create the Spark Context using the configuration we just created
