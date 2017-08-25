@@ -1,5 +1,5 @@
-Twitter Streaming
-=================
+Streaming Twitter Service
+=========================
 
 A few lines of code to demo how streaming works with Apache Spark, in particular using the extensions provided by [Apache Bahir](https://bahir.apache.org/) to read a live stream of tweets.
 
